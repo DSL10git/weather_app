@@ -88,6 +88,9 @@
       .bold {
         font-weight: bold;
       }
+      .emoji {
+        font-size: xx-large;
+      }
     </style>
   </head>
   <body>
@@ -134,7 +137,7 @@
     <h1>Weather App</h1>
     <label id="place_label" for="place">Enter a place:</label>
     <br />
-    <input id="place" class="place_label" type="text" />
+    <input id="place" class="place_label" type="text"/>
     <br />
     <button type="submit" py-click="display_weather">
       <strong>Get Weather</strong>
@@ -165,16 +168,16 @@
     />
     <label for="kelvin">Kelvin</label>
     <br />
-    <p id="temperature"></p>
-    <p id="emoji"></p>
-    <p id="description"></p>
+    <p id="temperature" class="bold"></p>
+    <p id="emoji" class="emoji"></p>
+    <p id="description" class="bold"></p>
     <section id="more_section" hidden>
       <h3>Wind Speed Units:</h3>
       <input type="radio" id="mph" name="speed" value="mph" checked />
       <label for="mph" class="pick-temp">mph</label>
       <input type="radio" class="pick-temp" id="kmh" name="speed" value="kmh" />
       <label for="kmh">km/h</label>
-      <p id="more"></p>
+      <p id="more" class="bold"></p>
       <p id="address" class="bold"></p>
     </section>
     <button type="submit" py-click="display_more">
